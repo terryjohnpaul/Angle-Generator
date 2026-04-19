@@ -57,7 +57,7 @@ export const angles = [
     id: 10,
     name: "Bird's-eye vertical shot",
     description: 'Directly overhead. Great for flat-lay or aerial lifestyle content.',
-    image: 'https://images.unsplash.com/photo-1520637836862-4d197d17c93a?w=120&h=120&fit=crop',
+    image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=120&h=120&fit=crop',
   },
   {
     id: 11,
@@ -93,19 +93,19 @@ export const angles = [
     id: 16,
     name: 'Foreground-obstructed shot',
     description: 'Object partially blocks lens. Creates depth and a voyeuristic feel.',
-    image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&h=120&fit=crop&crop=left',
+    image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=120&h=120&fit=crop',
   },
   {
     id: 17,
     name: 'Reflected perspective shot',
     description: 'Subject seen through a mirror or glass. Creative, layered composition.',
-    image: 'https://images.unsplash.com/photo-1520637836862-4d197d17c93a?w=120&h=120&fit=crop&crop=right',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&h=120&fit=crop',
   },
   {
     id: 18,
     name: 'Silhouette backlit shot',
     description: 'Strong light source behind subject. Mystery, mood, contrast.',
-    image: 'https://images.unsplash.com/photo-1502085026891-dba12f40e88a?w=120&h=120&fit=crop',
+    image: 'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=120&h=120&fit=crop',
   },
   {
     id: 19,
@@ -129,7 +129,7 @@ export const angles = [
     id: 22,
     name: 'Chest-height tracking angle',
     description: 'Camera at chest level, follows the subject. Candid, walking POV.',
-    image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop&crop=top',
+    image: 'https://images.unsplash.com/photo-1485217988980-11786ced9454?w=120&h=120&fit=crop',
   },
   {
     id: 23,
@@ -159,7 +159,7 @@ export const angles = [
     id: 27,
     name: 'Deep-focus wide shot',
     description: 'Everything sharp front to back. Full context, nothing hidden.',
-    image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=120&h=120&fit=crop',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=120&h=120&fit=crop&sat=-100',
   },
   {
     id: 28,
