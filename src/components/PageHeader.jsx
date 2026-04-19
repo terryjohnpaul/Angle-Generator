@@ -1,6 +1,8 @@
 const MAX = 9
 
 export default function PageHeader({ count }) {
+  const allSelected = count === MAX
+
   return (
     <div className="max-w-6xl mx-auto px-6 pt-10 pb-8">
       {/* Left-aligned editorial header */}
@@ -23,16 +25,21 @@ export default function PageHeader({ count }) {
           {Array.from({ length: MAX }).map((_, i) => (
             <div
               key={i}
-              className={`h-1.5 rounded-full transition-all duration-200 ${
+              className={`h-1.5 rounded-full transition-all duration-300 ${
                 i < count ? 'bg-black w-7' : 'bg-gray-200 w-5'
               }`}
             />
           ))}
         </div>
-        <span className="text-sm font-semibold text-black tabular-nums">
+        <span className={`text-sm font-semibold tabular-nums transition-colors duration-300 ${allSelected ? 'text-black' : 'text-gray-400'}`}>
           {count}
           <span className="text-gray-300 font-normal">/9</span>
         </span>
+        {allSelected && (
+          <span className="text-xs font-semibold text-black bg-gray-100 px-2 py-0.5 rounded-full">
+            Ready
+          </span>
+        )}
       </div>
     </div>
   )
