@@ -1,21 +1,28 @@
-const VARIANT_INTROS = {
-  1: 'Shoot this scene as a 3×3 grid using these 9 cinematic camera angles in order:',
-  2: 'Create a 3×3 visual story. Capture each frame using these camera angles in sequence:',
-  3: 'Direct a 9-panel grid. Frame each shot using the following cinematic angles:',
-}
+const OPENING_BLOCK = `Use the source image as the only reference and generate a single composite output arranged as a clean 3x3 grid. Each cell must depict the exact same moment with identical characters, wardrobe, facial structure, lighting logic, and environment. Preserve strict character consistency and cinematic realism. Do not introduce any new people, creatures, or background characters in any frame. Do not alter identity, age, gender, body proportions, costume details, or character poses. Poses, gestures, head orientation, limb positions, and physical interactions must remain unchanged across all panels. Maintain continuity of props, time of day, color palette, and scene mood.`
 
-const VARIANT_OUTROS = {
-  1: 'Each angle should feel distinct. The 9 shots must work together as a cohesive visual narrative.',
-  2: 'Make each frame intentional. Together the 9 shots should tell a single visual story.',
-  3: 'Ensure visual variety across the grid. Each shot should contrast and complement the others.',
-}
+const ASPECT_RATIO_RULES = `Aspect ratio rules: every panel must use the exact same aspect ratio, identical framing proportions, and consistent crop logic. No panel may be taller, wider, zoomed differently, or padded differently than the others. Maintain uniform composition boundaries across the entire grid. The final composite grid image must also retain the same aspect ratio as the original reference image.`
 
-export function generatePrompt(selectedAngles, variant = 1) {
+const LABELING_RULES = `Labeling rules: each panel must include a clear, unobtrusive numeric label in the top-left corner: "1", "2", "3", "4", "5", "6", "7", "8", and "9". Use a clean, minimal sans-serif font, small size, white or neutral color with subtle contrast for legibility. Labels must not overlap faces, key actions, or important visual elements.`
+
+const CLOSING_BLOCK = `All nine angles must feel like coverage from the same film production: coherent lens language, realistic camera physics, consistent shadows, reflections, and exposure. Avoid stylization drift. Avoid duplicating compositions. Avoid mirrored or slightly rotated versions of the same shot. Each angle must be compositionally and perspectively unique.
+
+Output as a single grid image with nine panels, identical aspect ratios, cinematic color grading, sharp detail, physically plausible lighting, and no added characters.`
+
+export function generatePrompt(selectedAngles) {
   if (selectedAngles.length === 0) return ''
-  const intro = VARIANT_INTROS[variant] ?? VARIANT_INTROS[1]
-  const outro = VARIANT_OUTROS[variant] ?? VARIANT_OUTROS[1]
-  const list = selectedAngles
-    .map((angle, i) => `${i + 1}. ${angle.name}`)
+
+  const angleList = selectedAngles
+    .map((angle) => `${angle.name} — ${angle.gridDesc}`)
     .join('\n')
-  return `${intro}\n\n${list}\n\n${outro}`
+
+  const sceneIntro = `Create nine clearly distinct camera angles from the same scene:`
+
+  return [
+    OPENING_BLOCK,
+    sceneIntro,
+    angleList,
+    ASPECT_RATIO_RULES,
+    LABELING_RULES,
+    CLOSING_BLOCK,
+  ].join('\n\n')
 }

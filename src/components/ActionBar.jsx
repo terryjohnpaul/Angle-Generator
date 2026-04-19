@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function ActionBar({ count, onReset, onRandom, onCopy, onExtract, variant, onVariantChange }) {
+export default function ActionBar({ count, onReset, onRandom, onCopy }) {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
@@ -62,25 +62,8 @@ export default function ActionBar({ count, onReset, onRandom, onCopy, onExtract,
           </button>
         </div>
 
-        {/* Right: Extract Prompt + variant */}
-        <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden">
-          <select
-            value={variant}
-            onChange={(e) => onVariantChange(Number(e.target.value))}
-            className="px-2 py-2 text-xs font-semibold bg-white text-black border-r border-gray-200 cursor-pointer outline-none"
-          >
-            <option value={1}>v1</option>
-            <option value={2}>v2</option>
-            <option value={3}>v3</option>
-          </select>
-          <button
-            onClick={onExtract}
-            disabled={count < 9}
-            className="px-4 py-2 text-sm font-semibold text-black hover:bg-gray-50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
-          >
-            Extract Prompt
-          </button>
-        </div>
+        {/* Right: spacer to balance Reset on left */}
+        <div className="w-16" />
 
       </div>
     </div>

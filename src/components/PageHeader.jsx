@@ -5,7 +5,6 @@ export default function PageHeader({ count }) {
 
   return (
     <div className="max-w-6xl mx-auto px-6 pt-10 pb-8">
-      {/* Left-aligned editorial header */}
       <div className="flex items-baseline gap-3 mb-1">
         <h1 className="text-4xl font-extrabold tracking-tight text-black">
           Angle Selector
@@ -16,7 +15,7 @@ export default function PageHeader({ count }) {
       </div>
 
       <p className="text-gray-400 text-sm mb-6">
-        Select 9 camera angles to generate a cinematic prompt for your 3×3 content grid
+        Select 9 camera angles for your 3x3 grid
       </p>
 
       {/* Progress bar + counter */}
