@@ -17,8 +17,8 @@ ${angle.prompt}`
 
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 flex-shrink-0">
-        <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
-          Angle Detail
+        <span className="text-sm font-bold text-black tracking-tight truncate pr-3">
+          {angle.name}
         </span>
         <button
           onClick={onClose}

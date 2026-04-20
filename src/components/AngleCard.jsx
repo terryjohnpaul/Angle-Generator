@@ -16,10 +16,15 @@ export default function AngleCard({ angle, selectionOrder, onOpenPanel, isActive
       `}
       style={!isSelected && !isActive ? { borderColor: '#EEEEEE' } : {}}
     >
-      {/* Name */}
-      <span className={`text-sm font-semibold leading-tight flex-1 ${isSelected && !isActive ? 'text-white' : 'text-black'}`}>
-        {angle.name}
-      </span>
+      {/* Name + description */}
+      <div className="flex-1 min-w-0">
+        <span className={`text-sm font-semibold leading-tight block ${isSelected && !isActive ? 'text-white' : 'text-black'}`}>
+          {angle.name}
+        </span>
+        <span className={`text-xs leading-tight block mt-0.5 truncate ${isSelected && !isActive ? 'text-white opacity-60' : 'text-gray-400'}`}>
+          {angle.description}
+        </span>
+      </div>
 
       {/* Checkmark for selected (when not active) */}
       {isSelected && !isActive && (
