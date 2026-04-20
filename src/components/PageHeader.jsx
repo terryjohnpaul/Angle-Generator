@@ -1,6 +1,7 @@
 const MAX = 9
 
 export default function PageHeader({ count }) {
+  const hasSelection = count >= 1
   const allSelected = count === MAX
 
   return (
@@ -15,7 +16,7 @@ export default function PageHeader({ count }) {
       </div>
 
       <p className="text-gray-400 text-sm mb-6">
-        Select 9 camera angles for your 3x3 grid
+        Select 1–9 camera angles — single image or grid
       </p>
 
       {/* Progress bar + counter */}
@@ -30,13 +31,13 @@ export default function PageHeader({ count }) {
             />
           ))}
         </div>
-        <span className={`text-sm font-semibold tabular-nums transition-colors duration-300 ${allSelected ? 'text-black' : 'text-gray-400'}`}>
+        <span className={`text-sm font-semibold tabular-nums transition-colors duration-300 ${hasSelection ? 'text-black' : 'text-gray-400'}`}>
           {count}
           <span className="text-gray-300 font-normal">/9</span>
         </span>
-        {allSelected && (
+        {hasSelection && (
           <span className="text-xs font-semibold text-black bg-gray-100 px-2 py-0.5 rounded-full">
-            Ready
+            {allSelected ? 'Grid ready' : count === 1 ? 'Single angle' : `${count}-panel grid`}
           </span>
         )}
       </div>

@@ -41,7 +41,7 @@ export default function ActionBar({ count, onReset, onRandom, onCopy }) {
           {/* Copy Prompt */}
           <button
             onClick={handleCopy}
-            disabled={count < 9}
+            disabled={count < 1}
             className="flex items-center gap-1.5 px-5 py-2 rounded-lg text-sm font-semibold bg-black text-white hover:bg-gray-800 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
           >
             {copied ? (

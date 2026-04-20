@@ -6,6 +6,7 @@ export const angles = [
     gridDesc: 'camera far from subject, full environment in frame, subject small within vast scene.',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4',
     prompt: 'Wide establishing shot. Camera positioned far from subject, capturing the full environment. Subject appears small within the vast scene. Golden hour lighting, anamorphic lens flare, cinematic 16:9 crop. The location tells the story before the subject does. Photorealistic, film grain, cinematic color grade.',
+    directorTip: { director: 'David Lean', movie: 'Lawrence of Arabia', year: 1962, note: 'Lawrence is reduced to a tiny speck crossing the desert — the environment becomes the protagonist before he says a word.' },
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const angles = [
     gridDesc: 'camera at subject\'s eye height, waist-up framing, natural conversational distance.',
     image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04',
     prompt: 'Medium shot at perfect eye level. Camera positioned at subject\'s eye height, framing from the waist up. Natural conversational distance. Soft natural window light from the side. 50mm lens equivalent, shallow depth of field, background gently blurred. Honest, approachable, human. Photorealistic portrait.',
+    directorTip: { director: 'Sidney Lumet', movie: '12 Angry Men', year: 1957, note: 'Lumet started at eye level then slowly crept above it — the same shot growing subtly oppressive as the jury\'s pressure mounted.' },
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const angles = [
     gridDesc: 'camera positioned below subject height, dramatic scale, cinematic lighting continuity.',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e',
     prompt: 'Low-angle hero shot. Camera positioned below subject, tilted upward. Subject dominates the frame, sky or ceiling visible behind them. Dramatic underside lighting, strong directional shadows. Wide-angle lens, slight distortion adds power. Subject appears commanding and larger-than-life. Photorealistic, cinematic.',
+    directorTip: { director: 'Orson Welles', movie: 'Citizen Kane', year: 1941, note: 'Welles had pits dug into the studio floor to place the camera below the actors — Kane always loomed, even before his fall from power.' },
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const angles = [
     gridDesc: 'framed from behind one character toward the other, shallow depth of field, strong narrative focus.',
     image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a',
     prompt: 'Over-the-shoulder shot. Camera placed just behind and above one subject\'s shoulder, looking toward a second subject or scene. Near shoulder and back of head visible in foreground, slightly out of focus. Creates depth, layering, and a sense of conversation. Warm ambient light. 35mm lens. Cinematic, photorealistic.',
+    directorTip: { director: 'Steven Spielberg', movie: 'Schindler\'s List', year: 1993, note: 'Spielberg used OTS to place viewers inside conversations — the foreground shoulder creates intimacy while maintaining the observer\'s distance.' },
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const angles = [
     gridDesc: 'tight frame on face filling the shot, eyes in critical sharp focus, background dissolved into bokeh.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d',
     prompt: 'Extreme close-up. Tight frame on the face, filling the shot. Eyes sharp and in critical focus, revealing emotion and micro-expressions. Soft diffused side lighting, gentle rim light. Background completely dissolved into bokeh. 85mm portrait lens wide open. Intimate, emotional, cinematic. Photorealistic.',
+    directorTip: { director: 'Sergio Leone', movie: 'The Good, the Bad and the Ugly', year: 1966, note: 'The final standoff cuts between extreme wide and extreme close-up of eyes — the tension lives entirely in that contrast.' },
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const angles = [
     gridDesc: 'camera elevated above subject pointing downward, subject appears smaller and observed, god\'s-eye perspective.',
     image: 'https://images.unsplash.com/photo-1519689680058-324335c77eba',
     prompt: 'High-angle shot. Camera elevated above subject, pointing downward. Subject appears smaller, more vulnerable, or observed. Environment and ground visible around subject. Natural overhead or diffused light. Creates a sense of being watched or a god\'s-eye overview. Documentary or dramatic feel. Photorealistic.',
+    directorTip: { director: 'Francis Ford Coppola', movie: 'The Godfather', year: 1972, note: 'The overhead angle during the Don\'s funeral makes the mourners appear small and powerless — a god surveying what mortality does to empire.' },
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const angles = [
     gridDesc: 'clean lateral 90-degree view, silhouette and posture emphasized, realistic lens perspective.',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2',
     prompt: 'Pure profile shot. Camera positioned exactly 90 degrees to the side of the subject. Subject\'s face in perfect silhouette profile. Strong directional side lighting sculpts the face. Clean negative space on one side for visual breathing room. Cinematic, graphic, timeless. 85mm lens. Photorealistic portrait.',
+    directorTip: { director: 'Stanley Kubrick', movie: 'Eyes Wide Shut', year: 1999, note: 'Kubrick used strict profiles to create psychological distance — the subject becomes a shape, not a person, and the viewer is forced to read between the lines.' },
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ export const angles = [
     gridDesc: 'slight diagonal camera roll for tension, physically plausible framing and lighting continuity.',
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
     prompt: 'Dutch tilt shot. Camera canted at a 20-30 degree angle, creating deliberate diagonal tension in the frame. Disorienting, psychological unease. High contrast dramatic lighting, deep shadows. Urban or architectural background with converging lines. Thriller or noir aesthetic. Photorealistic, cinematic color grade.',
+    directorTip: { director: 'Carol Reed', movie: 'The Third Man', year: 1949, note: 'Reed used the Dutch tilt obsessively across post-war Vienna — the whole city felt morally tilted, and the camera agreed.' },
   },
   {
     id: 9,
@@ -70,6 +78,7 @@ export const angles = [
     gridDesc: 'subject as tiny figure within vast environment, dramatic sky, anamorphic widescreen staging.',
     image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e',
     prompt: 'Extreme wide master shot. Vast landscape or epic environment. Subject is a tiny figure within the immense scene, overwhelmed by their surroundings. Dramatic sky, golden hour or blue hour light. Anamorphic widescreen format. Environmental storytelling at its most powerful. Photorealistic, cinematic, breathtaking scale.',
+    directorTip: { director: 'Terrence Malick', movie: 'The Tree of Life', year: 2011, note: 'Characters wander through vast Texas skies as tiny figures — Malick uses scale to ask whether human drama means anything against the universe.' },
   },
   {
     id: 10,
@@ -78,6 +87,7 @@ export const angles = [
     gridDesc: 'camera pointing straight down at 90 degrees, strict top-down geometry, clear spatial mapping.',
     image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8',
     prompt: "Bird's-eye view, camera pointing straight down at the subject. Perfectly overhead, 90 degrees to the ground. Subject and surroundings laid out like a flat map. No horizon visible. Natural top-down light, sharp and even. Symmetrical or graphically composed scene. Aerial, minimal, striking. Photorealistic.",
+    directorTip: { director: 'Alfred Hitchcock', movie: 'Psycho', year: 1960, note: 'The overhead shot looking straight down the stairwell after the detective is stabbed — gravity becomes dread.' },
   },
   {
     id: 11,
@@ -86,6 +96,7 @@ export const angles = [
     gridDesc: 'camera at floor level pointing sharply upward, subject towers overhead dramatically foreshortened, monumental scale.',
     image: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19',
     prompt: "Ground-level worm's-eye shot. Camera placed at floor level, lens pointing sharply upward. Subject towers overhead, dramatically foreshortened. Sky, ceiling, or environment visible behind and above subject. Subject appears monumental and imposing. Wide-angle lens enhances distortion. Dramatic, powerful, photorealistic.",
+    directorTip: { director: 'Sam Raimi', movie: 'Evil Dead', year: 1981, note: 'Raimi mounted the camera inches off the ground and sent it hurtling through the forest — the worm\'s-eye became the monster\'s point of view.' },
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ export const angles = [
     gridDesc: 'camera 45 degrees off center-front axis, slight face turn adds natural depth, balanced cinematic composition.',
     image: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6',
     prompt: 'Three-quarter front angle. Camera positioned 45 degrees off the subject\'s center-front axis. Slight turn adds depth and dimension to the face. Most flattering portrait angle. Soft front-fill light with gentle shadow on the far side. 50mm lens. Background slightly out of focus. Dynamic yet approachable. Photorealistic.',
+    directorTip: { director: 'Roger Deakins', movie: 'Blade Runner 2049', year: 2017, note: 'Almost every character introduction uses a 3/4 angle — it reads as natural but gives the face geometry and shadow that a straight-on shot never could.' },
   },
   {
     id: 13,
@@ -102,6 +114,7 @@ export const angles = [
     gridDesc: 'camera behind and to the side of subject, subject faces away into environment ahead, subtle rim light from front.',
     image: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
     prompt: 'Three-quarter rear angle. Camera positioned behind and to the side of the subject, slightly elevated. Subject faces away, looking into the scene or environment ahead. Suggests journey, contemplation, or departure. Backlit or side-lit from the front, creating a subtle rim light. Cinematic, atmospheric. Photorealistic.',
+    directorTip: { director: 'Christopher Nolan', movie: 'Interstellar', year: 2014, note: 'Cooper walking away from his farmhouse into the cornfield — the 3/4 rear angle makes departure feel like loss before a word is spoken.' },
   },
   {
     id: 14,
@@ -110,6 +123,7 @@ export const angles = [
     gridDesc: 'camera completely fixed, subject moves within precisely composed symmetric frame, editorial stillness.',
     image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186',
     prompt: 'Locked-off static frame. Camera completely fixed on a tripod, perfectly still. Subject moves within a precisely composed, symmetric or rule-of-thirds frame. Clean architectural or environmental background. Flat frontal lighting. Wes Anderson symmetry aesthetic. Every element intentionally placed. Photorealistic, editorial.',
+    directorTip: { director: 'Wes Anderson', movie: 'The Grand Budapest Hotel', year: 2014, note: 'Every scene is a locked-off diorama — characters enter, perform, and exit a perfectly composed stage. The stillness of the camera is the joke and the art.' },
   },
   {
     id: 15,
@@ -118,6 +132,7 @@ export const angles = [
     gridDesc: '200mm telephoto equivalent compressing depth, subject sharply isolated from smooth bokeh environment.',
     image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d',
     prompt: 'Long telephoto lens compression shot. 200mm+ equivalent focal length. Background and subject visually compressed and brought together. Subject sharply isolated, background melted into smooth bokeh. Street, cityscape, or environmental context compressed behind subject. Cinematic, editorial. Photorealistic.',
+    directorTip: { director: 'Michael Mann', movie: 'Heat', year: 1995, note: 'Mann used long lenses across the LA cityscape to compress the distance between hunter and hunted — the city itself feels like a trap closing in.' },
   },
   {
     id: 16,
@@ -126,6 +141,7 @@ export const angles = [
     gridDesc: 'out-of-focus object partially obscures lens in extreme foreground, subject in sharp mid-ground focus, three distinct depth layers.',
     image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1',
     prompt: 'Foreground obstruction shot. An out-of-focus object partially obscures the lens in the extreme foreground — leaves, fabric, glass, architecture. Subject sits in the mid-ground in sharp focus. Three distinct layers of depth. Voyeuristic or observational mood. Natural or ambient light. 35mm lens. Cinematic, photorealistic.',
+    directorTip: { director: 'Terrence Malick', movie: 'The New World', year: 2005, note: 'Malick constantly shoots through grass, water, and leaves — the foreground obstruction makes the viewer feel like a witness intruding on private moments.' },
   },
   {
     id: 17,
@@ -134,6 +150,7 @@ export const angles = [
     gridDesc: 'subject visible through mirror or reflective surface, layered double composition, surreal depth.',
     image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0',
     prompt: 'Reflected perspective. Subject visible through a mirror, window glass, or reflective surface. The reflection creates a layered double composition — subject exists in both the real and reflected world simultaneously. Architectural or interior setting. Ambient light. Creative, editorial, surreal. Photorealistic.',
+    directorTip: { director: 'Orson Welles', movie: 'The Lady from Shanghai', year: 1947, note: 'The funhouse mirror climax fractures characters into infinite reflections — identity shatters along with the glass.' },
   },
   {
     id: 18,
@@ -142,6 +159,7 @@ export const angles = [
     gridDesc: 'powerful light source directly behind subject, subject rendered as pure dark silhouette, dramatic rim glow outlines the form.',
     image: 'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1',
     prompt: 'Silhouette backlit shot. Powerful light source positioned directly behind the subject — sunset, window, studio backlight. Subject rendered as a pure dark silhouette against blazing light. Dramatic rim glow outlines the form. High contrast. No detail in subject, only shape and contour. Emotional, atmospheric, cinematic. Photorealistic.',
+    directorTip: { director: 'Steven Spielberg', movie: 'E.T. the Extra-Terrestrial', year: 1982, note: 'The bicycle silhouetted against the full moon is one of cinema\'s most iconic frames — the shape alone carries all the wonder.' },
   },
   {
     id: 19,
@@ -150,6 +168,7 @@ export const angles = [
     gridDesc: 'subject at exact frame center, strict bilateral symmetry, Kubrick-inspired graphic power.',
     image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
     prompt: 'Center-punched symmetrical shot. Subject placed at the exact center of the frame. Strict bilateral symmetry — left and right sides mirror each other perfectly. Architectural framing, corridor, doorway, or natural symmetry reinforces the composition. Flat frontal lighting. Kubrick-inspired graphic power. Photorealistic.',
+    directorTip: { director: 'Stanley Kubrick', movie: 'The Shining', year: 1980, note: 'The Overlook\'s corridors are always perfectly centered — symmetry that should feel safe instead feels like a trap. Kubrick weaponised geometry.' },
   },
   {
     id: 20,
@@ -158,6 +177,7 @@ export const angles = [
     gridDesc: 'subject at rule-of-thirds intersection point, off-center framing, dynamic negative space on opposite side.',
     image: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df',
     prompt: 'Asymmetrical rule-of-thirds composition. Subject placed at one of the four rule-of-thirds intersection points, deliberately offset from center. Generous negative space on the opposite side tells the story of environment or mood. Dynamic visual tension. Environmental context in background. Cinematic, photorealistic.',
+    directorTip: { director: 'Akira Kurosawa', movie: 'Seven Samurai', year: 1954, note: 'Kurosawa placed samurai at the edge of frame with negative space ahead — the empty space became where danger would arrive from.' },
   },
   {
     id: 21,
@@ -166,6 +186,7 @@ export const angles = [
     gridDesc: 'camera at waist or hip height with slight upward tilt, intimate ground-up perspective, editorial lifestyle framing.',
     image: 'https://images.unsplash.com/photo-1504257432389-52343af06ae3',
     prompt: 'Hand-level perspective shot. Camera positioned at waist or hip height, slightly below center. Unique intimate perspective looking up at the subject from just above ground level. Products, hands, or lower body in foreground. Slight upward tilt. Editorial lifestyle or product photography feel. Natural light. Photorealistic.',
+    directorTip: { director: 'Yasujiro Ozu', movie: 'Tokyo Story', year: 1953, note: 'Ozu never used eye level — his camera always sat at tatami-mat height, giving every scene a grounded, humble perspective that matched his characters\' quiet dignity.' },
   },
   {
     id: 22,
@@ -174,6 +195,7 @@ export const angles = [
     gridDesc: 'camera held at chest level following alongside subject, forward momentum and accompanying motion, candid documentary feel.',
     image: 'https://images.unsplash.com/photo-1485217988980-11786ced9454',
     prompt: 'Chest-height tracking shot. Camera mounted or held at chest level, following alongside or behind the moving subject. Sense of forward momentum and accompanying motion. Candid, documentary, street photography feel. Shallow depth of field, background streaks with motion. Natural ambient light. Immersive, photorealistic.',
+    directorTip: { director: 'Alfonso Cuarón', movie: 'Children of Men', year: 2006, note: 'The famous battle sequence tracks at chest height through rubble and chaos — you\'re not watching the war, you\'re running through it.' },
   },
   {
     id: 23,
@@ -182,6 +204,7 @@ export const angles = [
     gridDesc: 'doorway or arch creates second frame within photographic frame, subject positioned through natural border, multiple depth layers.',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c',
     prompt: 'Frame-within-frame environmental shot. A doorway, window, arch, tunnel, or natural opening creates a second frame within the photographic frame. Subject is positioned and visible through this natural border. Multiple layers of depth. The environment becomes the storytelling device. Cinematic, editorial. Photorealistic.',
+    directorTip: { director: 'John Ford', movie: 'The Searchers', year: 1956, note: 'Ford opens and closes the film with Ethan framed in a doorway — the civilised home borders the savage wilderness, and he belongs to neither.' },
   },
   {
     id: 24,
@@ -190,6 +213,7 @@ export const angles = [
     gridDesc: 'macro framing on surface texture or environmental detail, abstract composition, subject implied not shown directly.',
     image: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f',
     prompt: 'Extreme close-up of environment detail. Macro or near-macro framing on texture, surface, material, or environmental element — bark, concrete, fabric, water. Subject or context implied rather than shown directly. Abstract or semi-abstract composition. Raking light emphasizes texture. Fine detail, tactile quality. Photorealistic.',
+    directorTip: { director: 'Terrence Malick', movie: 'Badlands', year: 1973, note: 'Malick cuts to blades of grass, dirt, and hands between scenes of violence — the earth is indifferent to what happens on it, and that indifference is the horror.' },
   },
   {
     id: 25,
@@ -198,6 +222,7 @@ export const angles = [
     gridDesc: 'camera directly behind subject facing away into environment, open vista ahead, backlit with natural rim glow.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330',
     prompt: 'Rear profile shot. Camera positioned directly behind the subject, who faces away into the environment ahead. Open vista, landscape, or destination stretches out before them. Strong sense of solitude, journey, or contemplation. Backlit by natural light, slight rim glow. Emotional, atmospheric, cinematic. Photorealistic.',
+    directorTip: { director: 'David Lean', movie: 'Doctor Zhivago', year: 1965, note: 'Characters face vast Russian landscapes from behind — the camera places us at their shoulder, sharing the impossible journey without seeing their face.' },
   },
   {
     id: 26,
@@ -206,6 +231,7 @@ export const angles = [
     gridDesc: 'foreground element in critically sharp focus, subject dissolves into soft bokeh behind, progressive depth layers.',
     image: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91',
     prompt: 'Shallow-focus foreground lead shot. A foreground element is in critically sharp focus in the near field. Subject or scene behind gradually dissolves into soft bokeh. Progressive layers of depth: sharp foreground, transitional midground, soft background. 50mm lens wide open. Painterly, cinematic. Photorealistic.',
+    directorTip: { director: 'Roger Deakins', movie: 'No Country for Old Men', year: 2007, note: 'Deakins uses sharp foreground objects while the threat emerges softly behind — the viewer\'s eye is led to safety while danger arrives out of focus.' },
   },
   {
     id: 27,
@@ -214,6 +240,7 @@ export const angles = [
     gridDesc: 'foreground, midground, and background all in focus, classical cinematic staging.',
     image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4',
     prompt: 'Deep-focus wide shot. Large depth of field — everything from foreground to background in sharp focus simultaneously. Full environmental context visible and clear. f/8 or higher equivalent. Subject, midground elements, and background all equally rendered. Documentary or architectural aesthetic. Nothing hidden. Photorealistic.',
+    directorTip: { director: 'Orson Welles', movie: 'Citizen Kane', year: 1941, note: 'Welles and Gregg Toland pioneered deep focus — characters in the foreground and background are equally sharp, forcing the viewer to decide where to look.' },
   },
   {
     id: 28,
@@ -222,6 +249,7 @@ export const angles = [
     gridDesc: 'camera at diagonal corner with strong vanishing point, converging angular lines lead eye into image, design-forward perspective.',
     image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e',
     prompt: 'Oblique corner angle shot. Camera positioned at a diagonal corner, looking along converging angular lines. Strong vanishing point perspective. Architectural or interior setting — corridors, buildings, streets. Dynamic diagonal energy across the frame. Lines lead the eye deep into the image. Editorial, design-forward. Photorealistic.',
+    directorTip: { director: 'Ridley Scott', movie: 'Blade Runner', year: 1982, note: 'Scott shoots constantly down rain-soaked corridors at oblique angles — the converging lines trap characters in a city that was never designed for them.' },
   },
   {
     id: 29,
@@ -230,6 +258,7 @@ export const angles = [
     gridDesc: 'camera exactly at subject\'s eye level aligned to gaze direction, subject appears to look directly toward something off-frame.',
     image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61',
     prompt: 'Eye-line match shot. Camera positioned exactly at the subject\'s eye level, aligned to match their gaze direction precisely. Creates the sense that the subject is looking directly at or toward something specific off-frame. Paired with a reaction or point-of-view shot for continuity. Conversational, connecting. Photorealistic.',
+    directorTip: { director: 'Ingmar Bergman', movie: 'The Seventh Seal', year: 1957, note: 'Bergman\'s precise eye-line matches during dialogue give conversations an almost unbearable weight — two people looking at each other across the void.' },
   },
   {
     id: 30,
@@ -238,5 +267,6 @@ export const angles = [
     gridDesc: 'subject occupies small fraction of frame, vast empty space dominates, minimalist meditative composition.',
     image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b',
     prompt: 'Environmental negative-space composition. Subject occupies a small fraction of the frame — perhaps one corner or edge. Vast empty space dominates: open sky, calm water, endless landscape, blank wall. The emptiness is the subject as much as the person. Minimalist, meditative, fine art. Photorealistic.',
+    directorTip: { director: 'Michelangelo Antonioni', movie: "L'Avventura", year: 1960, note: 'Characters are dwarfed by empty architecture and open sea — Antonioni uses negative space to express an alienation that no dialogue could explain.' },
   },
 ]
