@@ -11,7 +11,7 @@ export default function PageHeader({ count }) {
           Angle Selector
         </h1>
         <span className="text-sm font-medium text-gray-400 tracking-wide uppercase">
-          by FrameCode
+          by Terry John
         </span>
       </div>
 
