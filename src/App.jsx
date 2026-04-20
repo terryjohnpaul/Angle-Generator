@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Navbar from './components/Navbar'
 import PageHeader from './components/PageHeader'
 import AngleGrid from './components/AngleGrid'
 import AnglePanel from './components/AnglePanel'
@@ -22,8 +21,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      <Navbar />
-
       {/* 70/30 layout: main content shifts left when panel is open */}
       <div
         className="transition-all duration-300"

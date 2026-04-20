@@ -13,7 +13,7 @@ ${angle.prompt}`
   }
 
   return (
-    <div className="fixed top-14 right-0 bottom-16 w-[30vw] bg-white border-l border-gray-100 z-40 flex flex-col overflow-hidden">
+    <div className="fixed top-0 right-0 bottom-16 w-[30vw] bg-white border-l border-gray-100 z-40 flex flex-col overflow-hidden">
 
       {/* Header */}
       <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 flex-shrink-0">
